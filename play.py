@@ -35,7 +35,7 @@ class SERVOANGLE(Structure):
 
 
 def movement_1():
-    mask_6 = 0x20
+    mask_61p2p3p4Acctv100inter = 0x20
     mask_3 = 0x04
     
     set_6_Angle = "1E"
