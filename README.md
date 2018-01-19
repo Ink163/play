@@ -24,42 +24,42 @@ The Yanshee-sdk provides arm-linux based c and python library that allows develo
 ### Get started
 
 
-1: Prepare your workspace and download the SDK
+####1: Prepare your workspace and download the SDK
 
-Commond(download): "git clone https://github.com/UBTEDU/yanshee-raspi-sdk.git" <br>
-
-
-2: Compile the files
-
-Commond: "make" (PS: MAKE INSIDE YOUR SDK FOLDER)
-
-Ex(Raspberrypi system). in folder /home/pi/sdk3/yanshee-raspi-sdk
+Commond(download): "git clone https://github.com/UBTEDU/yanshee-raspi-sdk.git"
 
 
+####2: Compile the files
 
-3: Set up dynamic library path 
+Commond 1:"cd (The path you put your sdk)/yanshee-raspi-sdk"
+Commond 2:"make"
+
+Ex(Raspberrypi system). 
+
+Commond 1: "cd /home/pi/sdk3/yanshee-raspi-sdk"
+Commond 2: "make"
+
+
+####3: Set up dynamic library path 
 
 Commond: "export LD_LIBRARY_PATH=(The path for the librobot.so;librobotlogstr.so;librobotutils.so;libjson.so):$LD_LIBRARY_PATH"
 
 Ex (Raspberrypi system). "export LD_LIBRARY_PATH=/home/pi/sdk3/yanshee-raspi-sdk/libs/sdklib:$LD_LIBRARY_PATH"
 
 
-4: Get the example 
+####4: Get the example 
 
-Find the demonstration python scripts in folder 
+Find the demonstration python scripts in folder "(The path you put your sdk)/yanshee-raspi-sdk/sdk/example/python"
 
-Commond: "cd (The path you put your sdk)/yanshee-raspi-sdk/sdk/example/python"
-
-Ex (Raspberrypi system). "cd /home/pi/sdk3/yanshee-raspi-sdk/sdk/example/python"
+Ex (Raspberrypi system). "/home/pi/sdk3/yanshee-raspi-sdk/sdk/example/python"
 
 
-
-5: Execute and learn the example 
+####5: Execute and learn the example 
 
 Commond: "python (example name).py".
 
-PS: Make sure the python scripts and "RobotApi.c";"RobotApi.h";"RobotApi.i";"RobotApi.o";"RobotApi.py";"_RobotApi.so". 
-are in same folder! 
+PS: MAKE SURE THE PYTHON SCRIPTS AND "RobotApi.c";"RobotApi.h";"RobotApi.i";"RobotApi.o";"RobotApi.py";"_RobotApi.so". 
+ARE IN SAME FOLDER! 
 
 
-6: Build your own project
+####6: Build your own project
