@@ -31,19 +31,26 @@ Commond(download): "git clone https://github.com/UBTEDU/yanshee-raspi-sdk.git" <
 
 2: Compile the files
 
-Commond: "make" (PS: MAKE IN THE FOLDER /yanshee-raspi-sdk)
+Commond: "make" (PS: MAKE INSIDE YOUR SDK FOLDER)
+
+Ex(Raspberrypi system). in folder /home/pi/sdk3/yanshee-raspi-sdk
 
 
 
 3: Set up dynamic library path 
 
-Commond: "export LD_LIBRARY_PATH=(The path for the librobot.so):$LD_LIBRARY_PATH"
+Commond: "export LD_LIBRARY_PATH=(The path for the librobot.so;librobotlogstr.so;librobotutils.so;libjson.so):$LD_LIBRARY_PATH"
 
+Ex (Raspberrypi system). "export LD_LIBRARY_PATH=/home/pi/sdk3/yanshee-raspi-sdk/libs/sdklib:$LD_LIBRARY_PATH"
 
 
 4: Get the example 
 
-Find the demonstration python scripts in folder /sdk/example/python
+Find the demonstration python scripts in folder 
+
+Commond: "cd (The path you put your sdk)/yanshee-raspi-sdk/sdk/example/python"
+
+Ex (Raspberrypi system). "cd /home/pi/sdk3/yanshee-raspi-sdk/sdk/example/python"
 
 
 
